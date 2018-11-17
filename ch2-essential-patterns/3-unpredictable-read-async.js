@@ -6,7 +6,8 @@ const cache = {};
 function inconsistentRead(filename, callback) {
   if (cache[filename]) {
     // On next tick, run callback.  Now it's async even when cached.
-    setTimeout(() => {
+    // TODO: Why process.nextTick(callback) over setTimeout(callback, 0)?
+    process.nextTick(() => {
       callback(cache[filename]);
     }, 0);
   } else {
