@@ -1,4 +1,3 @@
-// The general structure of the iterate function is...
 var iterateSeries = function(collection, iteratorCallback, finalCallback) {
   function iterate(index) {
     if (index === collection.length) {
@@ -12,7 +11,6 @@ var iterateSeries = function(collection, iteratorCallback, finalCallback) {
   }
 
   function finish() {
-    // Run code at end of iteration.
     finalCallback();
   }
 

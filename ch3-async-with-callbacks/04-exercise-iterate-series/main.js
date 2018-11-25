@@ -2,7 +2,6 @@ const iterateSeries = require("./iterate-series");
 
 const timedLog = time => message => callback => {
   setTimeout(() => {
-    // console.log(message);
     callback(null, message);
   }, time);
 };
