@@ -1,0 +1,46 @@
+{
+    "id": "L7h1p",
+    "name": "test123",
+    "content": [
+        {
+            "type": "text",
+            "text": "Example"
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                "   });",
+                " }",
+                " ",
+                "*function download(url, filename, callback) {",
+                "*  console.log(`Downloading - ${url}`);",
+                "*  request(url, (err, response, body) => {",
+                "     if (err) {",
+                "       return callback(err);",
+                "     }",
+                "     saveFile(filename, body, err => {",
+                "       if (err) {",
+                "         return callback(err);",
+                "       }",
+                "       console.log(\"Downloaded and saved: \", url);",
+                "       callback(null, body, true);",
+                "     });",
+                "   });",
+                " }"
+            ],
+            "firstLineNumber": 57,
+            "path": "ch3-async-with-callbacks/03-spider-recursive-sequential-execution/main.js",
+            "comments": [
+                "Hello World."
+            ]
+        }
+    ],
+    "symbols": {},
+    "file_version": "2.0.3",
+    "meta": {
+        "app_version": "0.5.8-0",
+        "file_blobs": {
+            "ch3-async-with-callbacks/03-spider-recursive-sequential-execution/main.js": "cb6241acccade03ad25caf5626c9263f8d44e6c7"
+        }
+    }
+}
